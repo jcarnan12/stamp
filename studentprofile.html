@@ -82,22 +82,6 @@ function submitClass() {
 <br>
 <button type="button" onclick="addClass()">Add Class</button>
 <button type="button" onclick="submitClass()">Submit</button>
-<script>
-function addClass() {
-    var x = document.getElementById("myTextarea");
-    x.style.display = ""
-}
-function submitClass() {
-    var x = document.getElementById("myTextarea");
-
-	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value;
-     x.style.display = "none"
-     
-    
-    
-}
-</script>
 
 </body>
 </html>
