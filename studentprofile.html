@@ -16,88 +16,144 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
+
     <!-- Left Column -->
     <div class="w3-third">
-    
+
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="girlswhocode.jpg alt="girlswhocode" style="width:250px;height:250px;">
           <div class="w3-display-bottomleft w3-container w3-text-black">
 <!-- where name goes -->
- 
+
           </div>
         </div>
     	<div class="w3-container">
           <p><i class= "fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-green"></i>Student</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-green"></i>New York, NY</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-green"></i>gwcforever@mail.com</p>
-          
-	  							       
+
+
           <hr>
 
 	<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-green">
-									     
+
             </i>Classes (Current/Taken)</b></p>
+
+
           <p>Math</p>
          <!DOCTYPE html>
 
 <p id="classList"></p>
 
-<textarea style="display:none" id="myTextarea">
+<textarea style="display:none" id="mathTextarea">
 </textarea>
 <br>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
 <script>
-function addClass() {
-    var x = document.getElementById("myTextarea");
+function addMathClass() {
+    var x = document.getElementById("mathTextarea");
     x.style.display = ""
 }
-function submitClass() {
-    var x = document.getElementById("myTextarea");
+function submitMathClass() {
+    var x = document.getElementById("mathTextarea");
 
 	var ele = document.getElementById("classList");
      ele.innerHTML = ele.innerHTML + x.value;
      x.style.display = "none"
-     
-    
-    
 }
 </script>
+<button type="button" onclick="addMathClass()">Add Class</button>
+<button type="button" onclick="submitMathClass()">Submit</button>
+
+
+
           <p>English</p>
-         
-<textarea style="display:none" id="myTextarea">
+
+<textarea style="display:none" id="EnglishTextarea">
 </textarea>
 <br>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
-					     
+<script>
+function addEnglishClass() {
+    var x = document.getElementById("EnglishTextarea");
+    x.style.display = ""
+}
+function submitEnglishClass() {
+    var x = document.getElementById("EnglishTextarea");
+
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button" onclick="addEnglishClass()">Add Class</button>
+<button type="button" onclick="submitEnglishClass()">Submit</button>
+
+
+
           <p>History</p>
-     
-<textarea style="display:none" id="myTextarea">
+
+<textarea style="display:none" id="HistoryTextarea">
 </textarea>
 <br>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
+<script>
+function addHistoryClass() {
+    var x = document.getElementById("HistoryTextarea");
+    x.style.display = ""
+}
+function submitHistoryClass() {
+    var x = document.getElementById("HistoryTextarea");
+
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button" onclick="addHistoryClass()">Add Class</button>
+<button type="button" onclick="submitHistoryClass()">Submit</button>
+
 
 			     <p>Science</p>
-  
-<textarea style="display:none" id="myTextarea">
+
+<textarea style="display:none" id="ScienceTextarea">
 </textarea>
 <br>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
+<script>
+function addScienceClass() {
+    var x = document.getElementById("ScienceTextarea");
+    x.style.display = ""
+}
+function submitScienceClass() {
+    var x = document.getElementById("ScienceTextarea");
+
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button" onclick="addScienceClass()">Add Class</button>
+<button type="button" onclick="submitScienceClass()">Submit</button>
 
           <p>Electives</p>
-                
-<textarea style="display:none" id="myTextarea">
+
+<textarea style="display:none" id="ElTextarea">
 </textarea>
-<br>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
 
           <br>
+          <script>
+          function addElClass() {
+              var x = document.getElementById("ElTextarea");
+              x.style.display = ""
+          }
+          function submitElClass() {
+              var x = document.getElementById("ElTextarea");
+
+          	var ele = document.getElementById("classList");
+               ele.innerHTML = ele.innerHTML + x.value;
+               x.style.display = "none"
+          }
+          </script>
+          <button type="button" onclick="addElClass()">Add Class</button>
+          <button type="button" onclick="submitElClass()">Submit</button>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-green"></i>Languages</b></p>
           <p>English</p>
@@ -121,13 +177,30 @@ function submitClass() {
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
+
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-hand-o-down fa-fw w3-margin-right w3-xxlarge w3-text-green"></i>About Me</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>GWC High</b></h5>
           <h6 class="w3-text-green"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017- <span class="w3-tag w3-green w3-round">Current</span></h6>
         <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+<!-- trying something out -->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Write about yourself</title>
+</head>
+<body>
+<h2>Write About Yourself </h2>
+<form action="jcarnan12.github.io/stamp/studentprofile" method="post">
+<p>
+<textarea name="comment" rows="10" cols="60"></textarea>
+<br />
+<input type="submit" value="Submit" />
+</p>
+</form>
+</body>
+
           <hr>
         </div>
         <div class="w3-container">
@@ -170,7 +243,7 @@ function submitClass() {
 <button class="ui youtube button">
   <i class="youtube icon"></i>
   YouTube
-</button>	
+</button>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>London Business School</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
@@ -186,10 +259,10 @@ function submitClass() {
 
     <!-- End Right Column -->
     </div>
-    
+
   <!-- End Grid -->
   </div>
-  
+
   <!-- End Page Container -->
 </div>
 
