@@ -101,6 +101,45 @@ function myFunction() {
                         <span>7:00 PM</span>
                     </div>
                 </li>
+                <!comments>
+              <head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<style type="text/css">
+div.hidden{
+display: none;
+}
+div.visible{
+display: block;
+}
+.comment_box{
+border-style:solid;
+border-width:1px;
+float:left;
+background-color:#d4d4cb;
+width:280px;
+padding-left:20px;
+padding-top:25px;
+padding-bottom:10px;
+}
+</style>
+<script type="text/javascript">
+function showCommentBox(){
+var div=document.getElementById('comment');
+div.className='visible';
+}
+</script>
+<body>
+<form action="mailto:myemail@domain.com" method="post">
+<input type="button" value="Comment" onclick="showCommentBox()"><br>
+<div class="hidden" id="comment">
+<p>Comments and suggestions:<br><textarea name="comments" rows="3" cols="30"></textarea><br><br>
+<input type="submit" name="sub" value="Send"></p>
+</div>
+</form>
+<! end of comments>
     
                 <li>
                     <span></span>
