@@ -1962,7 +1962,7 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: #3498db;
+		background-color:#76b852;
 		color: #fff !important;
 	}
 
@@ -1971,7 +1971,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #4aa3df;
+			background-color:#68bc3a;
 		}
 
 		input[type="submit"]:active,
@@ -3402,7 +3402,7 @@
 
 	#header {
 		background: rgba(0, 0, 0, 0.75);
-		color: #aed6f1;
+		color: ##a8f77e;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3427,11 +3427,11 @@
 
 			#header > .logo a {
 				font-size: 1.25em;
-				color: #3498db;
+				color: #76b852;
 			}
 
 				#header > .logo a:hover {
-					color: #3498db;
+					color: #76b852;
 				}
 
 			#header > .logo span {
@@ -3453,7 +3453,7 @@
 		}
 
 			#header > a:hover {
-				color: #3498db;
+				color: #76b852;
 			}
 
 			#header > a[href="#menu"] {
