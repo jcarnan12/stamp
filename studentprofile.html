@@ -159,14 +159,15 @@ function submitMathClass() {
 <button type="button" onclick="addClass()">Add Class</button>
 <button type="button" onclick="submitClass()">Submit</button>
 <script>
-function addClass() {
+function addEnglishClass() {
     var x = document.getElementById("EnglishTextarea");
     x.style.display = ""
 }
-function submitClass() {
+function submitEnglishClass() {
     var x = document.getElementById("EnglishTextarea");
 	var ele = document.getElementById("classList");
      ele.innerHTML = ele.innerHTML + x.value;
+	window.print(EnglishClass);
 }
 </script>
 
