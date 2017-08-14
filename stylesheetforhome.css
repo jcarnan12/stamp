@@ -1979,7 +1979,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #258cd1;
+			background-color: #68bc3a;
 		}
 
 		input[type="submit"].alt,
@@ -3108,7 +3108,7 @@
 
 		.wrapper.style2 {
 			background-color: #76b852;
-			color: #aed6f1;
+			color: #999999;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3793,7 +3793,7 @@
 			transition-delay: 1.25s;
 			content: '';
 			display: block;
-			background-color: #000;
+			background-color: #fff;
 			height: 100%;
 			left: 0;
 			opacity: 0.65;
