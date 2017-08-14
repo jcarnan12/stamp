@@ -3108,7 +3108,7 @@
 
 		.wrapper.style2 {
 			background-color: #76b852;
-			color: #000;
+			color: #000000;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3793,7 +3793,7 @@
 			transition-delay: 1.25s;
 			content: '';
 			display: block;
-			background-color: #000;
+			background-color: #000000;
 			height: 100%;
 			left: 0;
 			opacity: 0.65;
