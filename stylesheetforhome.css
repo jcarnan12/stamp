@@ -2896,7 +2896,7 @@
 
 		.wrapper.style1 {
 			background-color: #fafafa;
-			color: #999999;
+			color: #000000;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
@@ -3108,7 +3108,7 @@
 
 		.wrapper.style2 {
 			background-color: #76b852;
-			color: #000000;
+			color: #fff;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
