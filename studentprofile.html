@@ -152,28 +152,27 @@ function submitMathClass() {
 
 
           <p>English</p>
-		
+
 <textarea style="display:none" id="EnglishTextarea">
 </textarea>
 <br>
 <button type="button" onclick="addClass()">Add Class</button>
 <button type="button" onclick="submitClass()">Submit</button>
 <script>
-function addEnglishClass() {
+function addClass() {
+<p id="classList"></p>
     var x = document.getElementById("EnglishTextarea");
     x.style.display = ""
 }
-function submitEnglishClass() {
+function submitClass() {
     var x = document.getElementById("EnglishTextarea");
 	var ele = document.getElementById("classList");
      ele.innerHTML = ele.innerHTML + x.value;
-	window.print(EnglishClass);
 }
 </script>
 
 
           <p>History</p>
-
 <textarea style="display:none" id="HistoryTextarea">
 </textarea>
 <br>
