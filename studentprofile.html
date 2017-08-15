@@ -114,8 +114,6 @@ function submitMathClass() {
 <textarea style="display:none" id="EnglishTextarea">
 </textarea>
 <br>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
 <script>
 function addClass() {
 <p id="classList"></p>
@@ -128,7 +126,8 @@ function submitClass() {
      ele.innerHTML = ele.innerHTML + x.value;
 }
 </script>
-
+<button type="button" onclick="addClass()">Add Class</button>
+<button type="button" onclick="submitClass()">Submit</button>
 
           <p>History</p>
 <textarea style="display:none" id="HistoryTextarea">
