@@ -111,7 +111,7 @@ a:hover {
 }
 
 #search form {
-	height: 41px;
+	height: 100px;
 	margin: 0;
 	padding: 10px 0 0 20px;
 }
@@ -123,7 +123,7 @@ a:hover {
 }
 
 #search-text {
-	width: 170px;
+	width: 600px;
 	padding: 6px 5px 2px 5px;
 	border: 1px solid #DEDEDE;
 	background: #FFFFFF;
@@ -133,7 +133,7 @@ a:hover {
 }
 
 #search-submit {
-	width: 50px;
+	width: 90px;
 	height: 22px;
 	border: none;
 	background: #B9B9B9;
@@ -206,8 +206,8 @@ a:hover {
 
 #content {
 	float: left;
-	width: 940px;
-	padding: 0;
+	width: 935px;
+	padding: 1;
 }
 
 .post {
@@ -235,12 +235,12 @@ a:hover {
 }
 
 .post .meta {
-	width: 400px;
+	width: 940px;
 	padding: 5px 20px 5px 10px;
 	background: #676767;
 	text-align: left;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 11px;
+	font-size: 14px;
 	font-style: italic;
 	color: #FFFFFF;
 }
