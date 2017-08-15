@@ -25,13 +25,13 @@ var Modal = React.createClass({
 			React.createElement(
 				"form",
 				{ onSubmit: this.props.onSubmit, className: "ModalForm" },
-				React.createElement(Input, { id: "name", type: "text", placeholder: "Jack-Edward Oliver" }),
-				React.createElement(Input, { id: "username", type: "email", placeholder: "mrjackolai@gmail.com" }),
-				React.createElement(Input, { id: "password", type: "password", placeholder: "password" }),
+				React.createElement(Input, { id: "name", type: "text", placeholder: "Username" }),
+				React.createElement(Input, { id: "username", type: "email", placeholder: "Email Address" }),
+				React.createElement(Input, { id: "password", type: "password", placeholder: "Password" }),
 				React.createElement(
 					"button",
 					null,
-					"Log in ",
+					"Create Account ",
 					React.createElement("i", { className: "fa fa-fw fa-chevron-right" })
 				)
 			)
