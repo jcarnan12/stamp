@@ -93,33 +93,37 @@ html,body,h1,h2,h3,h4,h5,h6 {
  							</section>
  						</div>
 			</div>
-	</section>		
+	</section>	
+			
 <!-- Classes -->
-<!DOCTYPE html>
- <section id="one" class="wrapper style2">
-<h3> My Classes (Current/Past) </h3>
- <p id="classList"></p>
- 
- <textarea style="display:none" id="mathTextarea">
- </textarea>
- <br>
- <script>
- -function addMathClass() {
-     var x = document.getElementById("mathTextarea");
-     x.style.display = ""
- }
- -function submitMathClass() {
- 					function submitMathClass() {
-      var x = document.getElementById("mathTextarea");
-  
-  	var ele = document.getElementById("classList");
-       ele.innerHTML = ele.innerHTML + x.value;
-       x.style.display = "none"
-  }
+<section id="two" class="wrapper style2">
+				<header class="major">
+					<h2>My Classes (Current/Past)</h2>
+					<!DOCTYPE html>
+						 <p id="classList"></p>
+
+						 <textarea style="display:none" id="mathTextarea">
+						 </textarea>
+						 <br>
+						 <script>
+						 -function addMathClass() {
+							 var x = document.getElementById("mathTextarea");
+							 x.style.display = ""
+						 }
+						 function submitMathClass() {
+											function submitMathClass() {
+							  var x = document.getElementById("mathTextarea");
+
+							var ele = document.getElementById("classList");
+							   ele.innerHTML = ele.innerHTML + x.value;
+							   x.style.display = "none"
+						  }
  </script>
 <button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
-</section>
+<button type="button" onclick="submitClass()">Submit</button>		
+				</header>
+			</section>
+<!DOCTYPE html>
     <!-- End Left Column -->
     </div>
 <!---------------------->
