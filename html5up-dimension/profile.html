@@ -103,7 +103,7 @@ function submitMathClass() {
 <button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitMathClass()">Submit</button>
 
 		
-		<h3>engy</h3>
+		<h3>English</h3>
 		
 		<p id="ENG"></p>
 
@@ -126,93 +126,79 @@ function submitEngyClass() {
 <button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitEngyClass()">Submit</button>
 
 		
-		
-		
-		
-		
-
-
-          <h3>English</h3>
-
-		<p id="engList"></p>
-<textarea style="border:solid 1px orange" id="EnglishTextarea">
-</textarea>
-<br>
-<script>
-function addEngClass() {
-    var x = document.getElementById("EnglishTextarea");
-    x.style.display = ""
-}
-function submitEngClass() {
-    var x = document.getElementById("EnglishTextarea");
-	var ele = document.getElementById("engList");
-     ele.innerHTML = ele.innerHTML + x.value;
-	x.style.display="none"
-}
-</script>
-<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addClass()">Add Class</button>
-<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitClass()">Submit</button>
-
+	
           <h3>History</h3>
-<textarea style="border:solid 1px orange" id="HistoryTextarea">
+ 
+
+<p id="histList"></p>
+
+<textarea style="border:solid 1px orange" id="histTextarea">
 </textarea>
 <br>
 <script>
-function addHistoryClass() {
-    var x = document.getElementById("HistoryTextarea");
+function addhistClass() {
+    var x = document.getElementById("histTextarea");
     x.style.display = ""
 }
-function submitHistoryClass() {
-    var x = document.getElementById("HistoryTextarea");
-	var ele = document.getElementById("classList");
+function submithistClass() {
+    var x = document.getElementById("histTextarea");
+	var ele = document.getElementById("histList");
      ele.innerHTML = ele.innerHTML + x.value;
      x.style.display = "none"
 }
 </script>
-<button type="button" style="background-color: rgb(248, 131, 121)" onclick="addHistoryClass()">Add Class</button>
-<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitHistoryClass()">Submit</button>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addhistClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submithistClass()">Submit</button>
 
+		    <h3>Science</h3>
+ 
 
-			     <h3>Science</h3>
+<p id="sciList"></p>
 
-<textarea style="border:solid 1px orange" id="ScienceTextarea">
+<textarea style="border:solid 1px orange" id="sciTextarea">
 </textarea>
 <br>
 <script>
-function addScienceClass() {
-    var x = document.getElementById("ScienceTextarea");
+function addsciClass() {
+    var x = document.getElementById("sciTextarea");
     x.style.display = ""
 }
-function submitScienceClass() {
-    var x = document.getElementById("ScienceTextarea");
-	var ele = document.getElementById("classList");
+function submitsciClass() {
+    var x = document.getElementById("sciTextarea");
+	var ele = document.getElementById("sciList");
      ele.innerHTML = ele.innerHTML + x.value;
      x.style.display = "none"
 }
 </script>
-<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addScienceClass()">Add Class</button>
-<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitScienceClass()">Submit</button>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addsciClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitsciClass()">Submit</button>
 
-          <h3>Electives</h3>
 
-<textarea style="border:solid 1px orange" id="ElTextarea">
+		    <h3>Electives</h3>
+ 
+
+<p id="eleList"></p>
+
+<textarea style="border:solid 1px orange" id="elecTextarea">
 </textarea>
+<br>
+<script>
+function addelecClass() {
+    var x = document.getElementById("elecTextarea");
+    x.style.display = ""
+}
+function submitelecClass() {
+    var x = document.getElementById("elecTextarea");
+	var ele = document.getElementById("elecList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addelecClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitelecClass()">Submit</button>
 
-          <br>
-          <script>
-          function addElClass() {
-              var x = document.getElementById("ElTextarea");
-              x.style.display = ""
-          }
-          function submitElClass() {
-              var x = document.getElementById("ElTextarea");
-          	var ele = document.getElementById("classList");
-               ele.innerHTML = ele.innerHTML + x.value;
-               x.style.display = "none"
-          }
-          </script>
-          <button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addElClass()">Add Class</button>
-          <button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitElClass()">Submit</button>
+
+     
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
           <div class="w3-light-grey w3-round-xlarge">
