@@ -229,14 +229,29 @@ function submitelecClass() {
 <title>Write about yourself</title>
 </head>
 <body style= "border: solid 1px orange">
-	
-<form action="jcarnan12.github.io/stamp/templated5up-dimension/profile.html" method="post">
+	<p id="moi"></p> 
+ <h2>Write About Yourself </h2>
+ <textarea style="border:solid 1px orange" rows="10" cols="60" id="abtme">
+ </textarea>
+ <br>
+ <script>
+ 	}
+ function submitAbtMe() {
+   var x = document.getElementById("abtme");
+ 	var ele = document.getElementById("moi");
+     ele.innerHTML = ele.innerHTML + x.value;
+    x.style.display = "none"
+ }
+ </script>
+ <button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitAbtMe()">Submit</button>
+	 
+<!-- <form action="jcarnan12.github.io/stamp/templated5up-dimension/profile.html" method="post">
 <p>
 <textarea style= "border: solid 1px blue" name="comment" rows="10" cols="60"></textarea>
 <br />
 <input type="submit" value="Submit" />
 </p>
-	<br> 
+	<br>  --> 
 </body> 
 
           <h5 class="w3-opacity"><b>Troy High School</b></h5>
