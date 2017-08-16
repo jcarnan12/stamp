@@ -81,7 +81,7 @@
           <h3>Math</h3>
  
 
-<p id="classList"></p>
+<p id="mathList"></p>
 
 <textarea style="border:solid 1px orange" id="mathTextarea">
 </textarea>
@@ -93,7 +93,7 @@ function addMathClass() {
 }
 function submitMathClass() {
     var x = document.getElementById("mathTextarea");
-	var ele = document.getElementById("classList");
+	var ele = document.getElementById("mathList");
      ele.innerHTML = ele.innerHTML + x.value;
      x.style.display = "none"
 }
@@ -105,6 +105,7 @@ function submitMathClass() {
 
           <h3>English</h3>
 
+		<p id="engList"></p>
 <textarea style="border:solid 1px orange" id="EnglishTextarea">
 </textarea>
 <br>
@@ -116,8 +117,9 @@ function addEngClass() {
 }
 function submitEngClass() {
     var x = document.getElementById("EnglishTextarea");
-	var ele = document.getElementById("classList");
+	var ele = document.getElementById("engList");
      ele.innerHTML = ele.innerHTML + x.value;
+	x.style.display="none"
 }
 </script>
 <button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addClass()">Add Class</button>
