@@ -73,17 +73,30 @@ html,body,h1,h2,h3,h4,h5,h6 {
 		<section id="one" class="wrapper style1">
 		<div class="container">
 					<div class="row">
- 						<div class="5u">
+ 						<div class="6u">
  							<section class="special box">
  								<h3>Jane Doe</h3>
 								<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>New York, NY</p>
           						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>thestampnetwork@gmail.com</p>
  							</section>
  						</div>
-						<div class="5u">
+						<div class="6u">
  							<section class="special box">
  								<h3>Write About Yourself</h3>
-<form method="get" action="#">
+									<textarea style="border:solid 1px orange" rows="10" cols="60" id="abtme">
+ </textarea>
+ <br>
+ <script>
+ 	}
+ function submitAbtMe() {
+   var x = document.getElementById("abtme");
+ 	var ele = document.getElementById("moi");
+     ele.innerHTML = ele.innerHTML + x.value;
+    x.style.display = "none"
+ }
+ </script>
+ <button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitAbtMe()">Submit</button>
+									<form method="get" action="#">
 						<div>
 							<input type="text" name="s" id="search-text" value="" />
 							<input type="submit" id="search-submit" value="Submit" />
@@ -98,31 +111,141 @@ html,body,h1,h2,h3,h4,h5,h6 {
 <section id="two" class="wrapper style2">
 				<header class="major">
 					<h2>My Classes (Current/Past)</h2>
-					<form method="get" action="#">
-						<div>
-							<input type="text" name="s" id="search-text" value="" />
-							<input type="submit" id="search-submit" value="Submit" />
-						</div>
-					</form>
-					<!DOCTYPE html>
-						 <p id="classList"></p>
+					<hr>
 
-						 <textarea style="display:none" id="mathTextarea">
-						 </textarea>
-						 <br>
-						 <script>
-						 -function addMathClass() {
-							 var x = document.getElementById("mathTextarea");
-							 x.style.display = ""
-						 }
-						 function submitMathClass() {
-											function submitMathClass() {
-							  var x = document.getElementById("mathTextarea");
+		<h2>Classes (Current/Taken)</h2>
 
-							var ele = document.getElementById("classList");
-							   ele.innerHTML = ele.innerHTML + x.value;
-							   x.style.display = "none"
-						  }
+
+          <h3>Math</h3>
+ 
+
+<p id="mathList"></p>
+
+<textarea style="border:solid 1px orange" id="mathTextarea">
+</textarea>
+<br>
+<script>
+function addMathClass() {
+    var x = document.getElementById("mathTextarea");
+    x.style.display = ""
+}
+function submitMathClass() {
+    var x = document.getElementById("mathTextarea");
+	var ele = document.getElementById("mathList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addMathClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitMathClass()">Submit</button>
+
+		
+		<h3>English</h3>
+		
+		<p id="ENG"></p>
+
+<textarea style="border:solid 1px orange" id="engyTextarea">
+</textarea>
+<br>
+<script>
+function addEngyClass() {
+    var x = document.getElementById("engyTextarea");
+    x.style.display = ""
+}
+function submitEngyClass() {
+    var x = document.getElementById("engyTextarea");
+	var ele = document.getElementById("ENG");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addEngyClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitEngyClass()">Submit</button>
+
+		
+	
+          <h3>History</h3>
+ 
+
+<p id="histList"></p>
+
+<textarea style="border:solid 1px orange" id="histTextarea">
+</textarea>
+<br>
+<script>
+function addhistClass() {
+    var x = document.getElementById("histTextarea");
+    x.style.display = ""
+}
+function submithistClass() {
+    var x = document.getElementById("histTextarea");
+	var ele = document.getElementById("histList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addhistClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submithistClass()">Submit</button>
+
+		    <h3>Science</h3>
+ 
+
+<p id="sciList"></p>
+
+<textarea style="border:solid 1px orange" id="sciTextarea">
+</textarea>
+<br>
+<script>
+function addsciClass() {
+    var x = document.getElementById("sciTextarea");
+    x.style.display = ""
+}
+function submitsciClass() {
+    var x = document.getElementById("sciTextarea");
+	var ele = document.getElementById("sciList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addsciClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitsciClass()">Submit</button>
+
+
+		    <h3>Electives</h3>
+ 
+
+<p id="eleList"></p>
+
+<textarea style="border:solid 1px orange" id="elecTextarea">
+</textarea>
+<br>
+<script>
+function addelecClass() {
+    var x = document.getElementById("elecTextarea");
+    x.style.display = ""
+}
+function submitelecClass() {
+    var x = document.getElementById("elecTextarea");
+	var ele = document.getElementById("elecList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addelecClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitelecClass()">Submit</button>
+          <br>
+        </div>
+      </div><br>
+    <!-- End Left Column -->
+    </div>
+	 
+<!-- <form action="jcarnan12.github.io/stamp/templated5up-dimension/profile.html" method="post">
+<p>
+<textarea style= "border: solid 1px blue" name="comment" rows="10" cols="60"></textarea>
+<br />
+<input type="submit" value="Submit" />
+</p>
+	<br>  --> 
  </script>
 <!-----<button type="button" onclick="addClass()">Add Class</button>
 button type="button" onclick="submitClass()">Submit</button>	--->	
