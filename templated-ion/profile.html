@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<title>The Stamp</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Roboto", sans-serif;
+}
+	</style>
+	<head>
+		<title>STAMP | Home</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+
+		</noscript>
+	</head>
+	<body id="top">
+<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">Ion</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="https://jcarnan12.github.io/stamp/templated-ion/home.html">Home</a></li>
+						<li><a href="https://jcarnan12.github.io/stamp/templated-ion/feed.html">My Feed</a></li>
+						<li><a href="https://jcarnan12.github.io/stamp/studentprofile.html">My Profile</a></li>
+						<li><a href="https://jcarnan12.github.io/stamp/login-sign-up-form-concept/index.html" class="button special">Sign In</a></li>
+					</ul>
+				</nav>
+			</header>
+
+
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+
+	
+	
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+      <img src= "GWC.jpg" style="width:80%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+<!-- where name goes -->
+
+          </div>
+        </div>
+    	<div class="w3-container">
+          <p><i class= "fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-blue"></i>Synthia Louise Jones</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>New York, NY</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>thestampnetwork@gmail.com</p>
+
+
+          <hr>
+
+	<p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue">
+
+            </i>Classes (Current/Taken)</b></p>
+
+
+          <p>Math</p>
+         <!DOCTYPE html>
+
+<p id="classList"></p>
+
+<textarea style="display:none" id="mathTextarea">
+</textarea>
+<br>
+<script>
+function addMathClass() {
+    var x = document.getElementById("mathTextarea");
+    x.style.display = ""
+}
+function submitMathClass() {
+    var x = document.getElementById("mathTextarea");
+
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button" onclick="addMathClass()">Add Class</button>
+<button type="button" onclick="submitMathClass()">Submit</button>
+
+
+
+          <p>English</p>
+
+<textarea style="display:none" id="EnglishTextarea">
+</textarea>
+<br>
+<script>
+function addClass() {
+<p id="classList"></p>
+    var x = document.getElementById("EnglishTextarea");
+    x.style.display = ""
+}
+function submitClass() {
+    var x = document.getElementById("EnglishTextarea");
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+}
+</script>
+<button type="button" onclick="addClass()">Add Class</button>
+<button type="button" onclick="submitClass()">Submit</button>
+
+          <p>History</p>
+<textarea style="display:none" id="HistoryTextarea">
+</textarea>
+<br>
+<script>
+function addHistoryClass() {
+    var x = document.getElementById("HistoryTextarea");
+    x.style.display = ""
+}
+function submitHistoryClass() {
+    var x = document.getElementById("HistoryTextarea");
+
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button" onclick="addHistoryClass()">Add Class</button>
+<button type="button" onclick="submitHistoryClass()">Submit</button>
+
+
+			     <p>Science</p>
+
+<textarea style="display:none" id="ScienceTextarea">
+</textarea>
+<br>
+<script>
+function addScienceClass() {
+    var x = document.getElementById("ScienceTextarea");
+    x.style.display = ""
+}
+function submitScienceClass() {
+    var x = document.getElementById("ScienceTextarea");
+
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button" onclick="addScienceClass()">Add Class</button>
+<button type="button" onclick="submitScienceClass()">Submit</button>
+
+          <p>Electives</p>
+
+<textarea style="display:none" id="ElTextarea">
+</textarea>
+
+          <br>
+          <script>
+          function addElClass() {
+              var x = document.getElementById("ElTextarea");
+              x.style.display = ""
+          }
+          function submitElClass() {
+              var x = document.getElementById("ElTextarea");
+
+          	var ele = document.getElementById("classList");
+               ele.innerHTML = ele.innerHTML + x.value;
+               x.style.display = "none"
+          }
+          </script>
+          <button type="button" onclick="addElClass()">Add Class</button>
+          <button type="button" onclick="submitElClass()">Submit</button>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:100%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:55%"></div>
+          </div>
+          <p>German</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:2%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-hand-o-down fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>About Me</h2>
+        <div class="w3-container">
+		<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Write about yourself</title>
+</head>
+<body>
+<h2>Write About Yourself </h2>
+<form action="jcarnan12.github.io/stamp/studentprofile.html" method="post">
+<p>
+<textarea name="comment" rows="10" cols="60"></textarea>
+<br />
+<input type="submit" value="Submit" />
+</p>
+</form>
+</body>
+
+          <h5 class="w3-opacity"><b>Troy High School</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017- <span class="w3-tag w3-blue w3-round">Current</span></h6>
+        <p>I am 17 years old. I am a junior. I love math and science. I use my writing to get my feelings out. I love singing and writing poems.</p>
+<!-- trying something out -->
+
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / girlwhocode.com</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2014 - Jun 2017</h6>
+          <p>I am currently taking classes at Troy High School for coding and web development. Web Developing had been an interest of mine for years now. I aspire to go to college for Computer Science. There aren't many women in the technology field, therefore, I plan to thrive in my profession. </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Future Graphic Designer for BlackRock / blackrock.com </b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2018 - May 2022</h6>
+          <p>If I decide to become a professional web designer I want to work at BlackRock.</p><br>
+										   									  										  
+<!--       <div class="w3-container w3-card-2 w3-white w3-margin-bottom"> -->
+        <div class="w3-container">
+<!-- social media buttons  -->
+<style type="text/css">
+ 
+#share-buttons img {
+width: 60px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+ 
+</style>
+<div id="share-buttons">
+    </a>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-blue w3-center w3-margin-top">
+</footer>
+
+</body>
+</html>
