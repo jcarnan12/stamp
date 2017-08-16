@@ -215,20 +215,34 @@ function submitScienceClass() {
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-hand-o-down fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>About Me</h2>
         <div class="w3-container">
 		<html lang="en">
-<head>
+<head> 
 <meta charset="utf-8" />
 <title>Write about yourself</title>
 </head>
 <body style= "border: solid 1px orange">
 <h2>Write About Yourself </h2>
-<form action="jcarnan12.github.io/stamp/templated5up-dimension/profile.html" method="post">
+<textarea style="border:solid 1px orange" rows="10" cols="60" id="EnglishTextarea">
+</textarea>
+<br>
+<script>
+	}
+function submitHistoryClass() {
+    var x = document.getElementById("HistoryTextarea");
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitScienceClass()">Submit</button>
+	
+<!-- <form action="jcarnan12.github.io/stamp/templated5up-dimension/profile.html" method="post">
 <p>
 <textarea style= "border: solid 1px blue" name="comment" rows="10" cols="60"></textarea>
 <br />
 <input type="submit" value="Submit" />
 </p>
-	<br>
-</body>
+	<br> --> 
+</body> 
 
           <h5 class="w3-opacity"><b>Troy High School</b></h5>
           <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2017- <span class="w3-tag w3-blue w3-round">Current</span></h6>
@@ -249,7 +263,7 @@ function submitScienceClass() {
           <p>If I decide to become a professional web designer I want to work at BlackRock.</p><br>
 		
 <h2>POSTS AND PREVIOUS ACTIVITY</h2>
-	<p>yo</p>
+	<p><span class="glyphicon glyphicon-thumbs-up"></span></p>    yo</p>
 		
 <!--       <div class="w3-container w3-card-2 w3-white w3-margin-bottom"> -->
         <div class="w3-container">
