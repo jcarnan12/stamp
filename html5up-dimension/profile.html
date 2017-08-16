@@ -219,6 +219,8 @@ function submitScienceClass() {
 <title>Write about yourself</title>
 </head>
 <body style= "border: solid 1px orange">
+	
+	<p id="moi"></p> 
 <h2>Write About Yourself </h2>
 <textarea style="border:solid 1px orange" rows="10" cols="60" id="abtme">
 </textarea>
@@ -227,7 +229,7 @@ function submitScienceClass() {
 	}
 function submitAbtMe() {
     var x = document.getElementById("abtme");
-	var ele = document.getElementById("classList");
+	var ele = document.getElementById("moi");
      ele.innerHTML = ele.innerHTML + x.value;
      x.style.display = "none"
 }
