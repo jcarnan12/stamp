@@ -71,29 +71,44 @@ html,body,h1,h2,h3,h4,h5,h6 {
     <div class="w3-third">
 						
 		<!-- Profile Info -->
-			<section id="two" class="wrapper style2">
-				<header class="major">
-					<h2>Jane Doe</h2>
-					<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>New York, NY</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>thestampnetwork@gmail.com</p>
-				</header>
-			</section>
-			
+		<section id="one" class="wrapper style1">
+		<div class="container">
+					<div class="row">
+ 						<div class="5u">
+ 							<section class="special box">
+ 								<h3>Jane Doe</h3>
+								<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>New York, NY</p>
+          						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>thestampnetwork@gmail.com</p>
+ 							</section>
+ 						</div>
+						<div class="5u">
+ 							<section class="special box">
+ 								<h3>Write About Yourself</h3>
+<form method="get" action="#">
+						<div>
+							<input type="text" name="s" id="search-text" value="" />
+							<input type="submit" id="search-submit" value="Submit" />
+						</div>
+					</form>
+ 							</section>
+ 						</div>
+			</div>
+	</section>		
 <!-- Classes -->
 <!DOCTYPE html>
- -
- -<p id="classList"></p>
- -
- -<textarea style="display:none" id="mathTextarea">
- -</textarea>
- -<br>
- -<script>
+ 
+ <p id="classList"></p>
+ 
+ <textarea style="display:none" id="mathTextarea">
+ </textarea>
+ <br>
+ <script>
  -function addMathClass() {
- -    var x = document.getElementById("mathTextarea");
- -    x.style.display = ""
- -}
+     var x = document.getElementById("mathTextarea");
+     x.style.display = ""
+ }
  -function submitMathClass() {
- +					function submitMathClass() {
+ 					function submitMathClass() {
       var x = document.getElementById("mathTextarea");
   
   	var ele = document.getElementById("classList");
@@ -101,8 +116,8 @@ html,body,h1,h2,h3,h4,h5,h6 {
        x.style.display = "none"
   }
   </script>
- -<button type="button" onclick="addMathClass()">Add Class</button>
- -<button type="button" onclick="submitMathClass()">Submit</button>
+ <button type="button" onclick="addMathClass()">Add Class</button>
+ <button type="button" onclick="submitMathClass()">Submit</button>
 
     <!-- End Left Column -->
     </div>
