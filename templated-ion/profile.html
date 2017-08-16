@@ -77,51 +77,33 @@ html,body,h1,h2,h3,h4,h5,h6 {
 					<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>New York, NY</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>thestampnetwork@gmail.com</p>
 				</header>
-			</section>						
+			</section>
+			
 <!-- Classes -->
-<section id="two" class="wrapper style2">
-				<header class="major">
-					<h2>Classes (Current/Taken)</h2>
-         <!DOCTYPE html>
-					function submitMathClass() {
-    var x = document.getElementById("mathTextarea");
+<!DOCTYPE html>
+ -
+ -<p id="classList"></p>
+ -
+ -<textarea style="display:none" id="mathTextarea">
+ -</textarea>
+ -<br>
+ -<script>
+ -function addMathClass() {
+ -    var x = document.getElementById("mathTextarea");
+ -    x.style.display = ""
+ -}
+ -function submitMathClass() {
+ +					function submitMathClass() {
+      var x = document.getElementById("mathTextarea");
+  
+  	var ele = document.getElementById("classList");
+       ele.innerHTML = ele.innerHTML + x.value;
+       x.style.display = "none"
+  }
+  </script>
+ -<button type="button" onclick="addMathClass()">Add Class</button>
+ -<button type="button" onclick="submitMathClass()">Submit</button>
 
-	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value;
-     x.style.display = "none"
-}
-</script>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
-	
-					 <form method="get" action="#">
-						<div>
-							<input type="text" name="s" id="search-text" value="" />
-							<input type="submit" id="search-submit" value="Add Class" />
-						</div>
-					</form>
-
-<p id="classList"></p>
-
-<textarea style="display:none" id="mathTextarea">
-</textarea>
-<br>
-<script>
-function addClass() {
-    var x = document.getElementById("mathTextarea");
-    x.style.display = ""
-}
-function submitMathClass() {
-    var x = document.getElementById("mathTextarea");
-
-	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value;
-     x.style.display = "none"
-}
-</script>
-<button type="button" onclick="addClass()">Add Class</button>
-<button type="button" onclick="submitClass()">Submit</button>
-	
     <!-- End Left Column -->
     </div>
 
