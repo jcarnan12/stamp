@@ -69,11 +69,6 @@ html,body,h1,h2,h3,h4,h5,h6 {
 
     <!-- Left Column -->
     <div class="w3-third">
-
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-      <img src= "https://github.com/jcarnan12/stamp/blob/gh-pages/girlwc.jpg?raw=true" style="width:80%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
 						
 		<!-- Profile Info -->
 			<section id="two" class="wrapper style2">
@@ -87,8 +82,24 @@ html,body,h1,h2,h3,h4,h5,h6 {
 <section id="two" class="wrapper style2">
 				<header class="major">
 					<h2>Classes (Current/Taken)</h2>
-<p>Math</p>
          <!DOCTYPE html>
+					function submitMathClass() {
+    var x = document.getElementById("mathTextarea");
+
+	var ele = document.getElementById("classList");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button" onclick="addClass()">Add Class</button>
+<button type="button" onclick="submitClass()">Submit</button>
+	
+					 <form method="get" action="#">
+						<div>
+							<input type="text" name="s" id="search-text" value="" />
+							<input type="submit" id="search-submit" value="Add Class" />
+						</div>
+					</form>
 
 <p id="classList"></p>
 
@@ -96,7 +107,7 @@ html,body,h1,h2,h3,h4,h5,h6 {
 </textarea>
 <br>
 <script>
-function addMathClass() {
+function addClass() {
     var x = document.getElementById("mathTextarea");
     x.style.display = ""
 }
@@ -108,115 +119,9 @@ function submitMathClass() {
      x.style.display = "none"
 }
 </script>
-<button type="button" onclick="addMathClass()">Add Class</button>
-<button type="button" onclick="submitMathClass()">Submit</button>
-
-
-
-          <p>English</p>
-
-<textarea style="display:none" id="EnglishTextarea">
-</textarea>
-<br>
-<script>
-function addClass() {
-<p id="classList"></p>
-    var x = document.getElementById("EnglishTextarea");
-    x.style.display = ""
-}
-function submitClass() {
-    var x = document.getElementById("EnglishTextarea");
-	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value;
-}
-</script>
 <button type="button" onclick="addClass()">Add Class</button>
 <button type="button" onclick="submitClass()">Submit</button>
-
-          <p>History</p>
-<textarea style="display:none" id="HistoryTextarea">
-</textarea>
-<br>
-<script>
-function addHistoryClass() {
-    var x = document.getElementById("HistoryTextarea");
-    x.style.display = ""
-}
-function submitHistoryClass() {
-    var x = document.getElementById("HistoryTextarea");
-
-	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value;
-     x.style.display = "none"
-}
-</script>
-<button type="button" onclick="addHistoryClass()">Add Class</button>
-<button type="button" onclick="submitHistoryClass()">Submit</button>
-
-
-			     <p>Science</p>
-
-<textarea style="display:none" id="ScienceTextarea">
-</textarea>
-<br>
-<script>
-function addScienceClass() {
-    var x = document.getElementById("ScienceTextarea");
-    x.style.display = ""
-}
-function submitScienceClass() {
-    var x = document.getElementById("ScienceTextarea");
-
-	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value;
-     x.style.display = "none"
-}
-</script>
-<button type="button" onclick="addScienceClass()">Add Class</button>
-<button type="button" onclick="submitScienceClass()">Submit</button>
-
-          <p>Electives</p>
-
-<textarea style="display:none" id="ElTextarea">
-</textarea>
-
-          <br>
-          <script>
-          function addElClass() {
-              var x = document.getElementById("ElTextarea");
-              x.style.display = ""
-          }
-          function submitElClass() {
-              var x = document.getElementById("ElTextarea");
-
-          	var ele = document.getElementById("classList");
-               ele.innerHTML = ele.innerHTML + x.value;
-               x.style.display = "none"
-          }
-          </script>
-          <button type="button" onclick="addElClass()">Add Class</button>
-          <button type="button" onclick="submitElClass()">Submit</button>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-blue" style="height:24px;width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-blue" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-blue" style="height:24px;width:2%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-				</header>
-			</section>	
-
+	
     <!-- End Left Column -->
     </div>
 
