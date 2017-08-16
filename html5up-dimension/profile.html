@@ -221,19 +221,19 @@ function submitScienceClass() {
 </head>
 <body style= "border: solid 1px orange">
 <h2>Write About Yourself </h2>
-<textarea style="border:solid 1px orange" rows="10" cols="60" id="EnglishTextarea">
+<textarea style="border:solid 1px orange" rows="10" cols="60" id="abtme">
 </textarea>
 <br>
 <script>
 	}
-function submitHistoryClass() {
-    var x = document.getElementById("HistoryTextarea");
+function submitAbtMe() {
+    var x = document.getElementById("abtme");
 	var ele = document.getElementById("classList");
      ele.innerHTML = ele.innerHTML + x.value;
      x.style.display = "none"
 }
 </script>
-<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitScienceClass()">Submit</button>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="submitAbtMe()">Submit</button>
 	
 <!-- <form action="jcarnan12.github.io/stamp/templated5up-dimension/profile.html" method="post">
 <p>
