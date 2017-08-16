@@ -94,7 +94,7 @@ function addMathClass() {
 function submitMathClass() {
     var x = document.getElementById("mathTextarea");
 	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value + ", ";
+     ele.innerHTML = ele.innerHTML + x.value;
      x.style.display = "none"
 }
 </script>
@@ -210,7 +210,7 @@ function submitScienceClass() {
 
       <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-hand-o-down fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>About Me</h2>
-        <div class="w3-container">
+        <div class="w3-container" style= "border: solid 1px orange">
 		<html lang="en">
 <head>
 <meta charset="utf-8" />
