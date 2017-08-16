@@ -89,12 +89,12 @@
 <script>
 function addMathClass() {
     var x = document.getElementById("mathTextarea");
-    x.style.display = ", "
+    x.style.display = " "
 }
 function submitMathClass() {
     var x = document.getElementById("mathTextarea");
 	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + x.value;
+     ele.innerHTML = ele.innerHTML + ", " + x.value;
      x.style.display = "none"
 }
 </script>
