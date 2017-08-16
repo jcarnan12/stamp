@@ -84,7 +84,7 @@
 
 <p id="classList"></p>
 
-<textarea style="display:none" id="mathTextarea">
+<textarea style="border:solid 1px orange" id="mathTextarea">
 </textarea>
 <br>
 <script>
@@ -110,12 +110,12 @@ function submitMathClass() {
 </textarea>
 <br>
 <script>
-function addClass() {
+function addEngClass() {
 <p id="classList"></p>
     var x = document.getElementById("EnglishTextarea");
     x.style.display = ""
 }
-function submitClass() {
+function submitEngClass() {
     var x = document.getElementById("EnglishTextarea");
 	var ele = document.getElementById("classList");
      ele.innerHTML = ele.innerHTML + x.value;
