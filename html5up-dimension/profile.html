@@ -94,7 +94,7 @@ function addMathClass() {
 function submitMathClass() {
     var x = document.getElementById("mathTextarea");
 	var ele = document.getElementById("classList");
-     ele.innerHTML = ele.innerHTML + ", " + x.value;
+     ele.innerHTML = ele.innerHTML + x.value + ", ";
      x.style.display = "none"
 }
 </script>
