@@ -1290,8 +1290,7 @@ h2 {
 	}
 
 /* BG */
-
-	#bg {
+/* #bg {
 		-moz-transform: scale(1.0);
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
@@ -1360,7 +1359,8 @@ h2 {
 
 		body.is-loading #bg:before {
 			background-color: #000000;
-		}
+		}  
+*/
 
 /* Wrapper */
 
