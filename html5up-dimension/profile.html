@@ -102,6 +102,34 @@ function submitMathClass() {
 <button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addMathClass()">Add Class</button>
 <button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitMathClass()">Submit</button>
 
+		
+		
+		
+		<p id="ENG"></p>
+
+<textarea style="border:solid 1px orange" id="engyTextarea">
+</textarea>
+<br>
+<script>
+function addEngyClass() {
+    var x = document.getElementById("engyTextarea");
+    x.style.display = ""
+}
+function submitEngyClass() {
+    var x = document.getElementById("engyTextarea");
+	var ele = document.getElementById("ENG");
+     ele.innerHTML = ele.innerHTML + x.value;
+     x.style.display = "none"
+}
+</script>
+<button type="button"  style="background-color: rgb(248, 131, 121)" onclick="addEngyClass()">Add Class</button>
+<button type="button" style="background-color: rgb(248, 131, 121)" onclick="submitEngyClass()">Submit</button>
+
+		
+		
+		
+		
+		
 
 
           <h3>English</h3>
